@@ -1,95 +1,85 @@
 # Rolarm AI Surveillance Robot
 
-An intelligent AI-powered home security robot designed for real-time monitoring, remote navigation, and environmental safety. Built using Raspberry Pi, Computer Vision, IoT sensors, and a mobile-first control interface, Rolarm combines autonomous surveillance with smart home protection in a single integrated platform.
+An AI-powered smart home security robot built with Raspberry Pi, Computer Vision, and IoT technologies.
 
-## Overview
+## Features
 
-Rolarm is a smart surveillance robot capable of remotely patrolling indoor environments while providing live video monitoring, face recognition, intrusion detection, and safety alerts. The system enables homeowners to monitor their homes from anywhere and receive notifications when unfamiliar individuals or hazardous environmental conditions are detected.
+- Real-time Face Recognition
+- Stranger Detection & Alarm Activation
+- Mobile Robot Control
+- Live Camera Streaming
+- Face Enrollment & Training
+- Fire & Gas Detection
+- Motion Detection (PIR)
+- Event Logging System
+- Mobile-Friendly Dashboard
 
-## Key Features
+---
 
-### Computer Vision & AI
+## Screenshots
 
-* Real-time face detection and recognition
-* Known-person identification
-* Stranger detection and alert generation
-* Face enrollment and model training workflow
-* Live camera streaming
+### 🚨 Intruder Detection & Alarm Activation
 
-### Mobile Monitoring & Control
+![Intruder Detection](screenshots/02_intruder_detection_alarm.jpeg)
 
-* Mobile-friendly Progressive Web Application (PWA)
-* Remote robot navigation
-* Real-time system monitoring
-* Secure owner authentication
-* Event and alert history
+Detects unknown individuals and automatically activates the alarm system.
 
-### Safety & Security
+---
 
-* Gas leak detection
-* Flame/fire detection
-* Motion detection using PIR sensors
-* Audible alarm and visual warning indicators
-* Emergency notification support
+### ✅ Authorized User Recognition
 
-### Robotics & Hardware
+![Authorized User](screenshots/03_authorized_user_recognition.jpeg)
 
-* Raspberry Pi based architecture
-* L298N motor driver integration
-* Camera module support
-* Buzzer and LED indicators
-* Expandable sensor framework
+Recognizes registered family members and confirms a safe status.
 
-### Data & Logging
+---
 
-* SQLite event database
-* Incident logging
-* Alert history management
-* Sensor activity tracking
+### 🎮 Robot Control Dashboard
 
-## System Architecture
+![Robot Control](screenshots/04_robot_control_dashboard.png)
 
-The system consists of four primary layers:
+Control robot movement remotely using a mobile-friendly interface.
 
-1. **Mobile Application Layer**
+---
 
-   * User authentication
-   * Remote control dashboard
-   * Live monitoring interface
+### 👤 Face Enrollment & Model Training
 
-2. **Application Layer**
+![Face Enrollment](screenshots/05_face_enrollment_training.png)
 
-   * Flask backend
-   * Alert management
-   * Event logging
-   * API services
+Register new users and train the recognition model directly from the dashboard.
 
-3. **AI Layer**
+---
 
-   * Face recognition
-   * Stranger detection
-   * Image processing
+### 📊 Sensor Monitoring
 
-4. **Hardware Layer**
+![Sensor Monitoring](screenshots/06_sensor_monitoring.jpeg)
 
-   * Raspberry Pi
-   * Camera module
-   * Gas sensor
-   * Flame sensor
-   * PIR sensor
-   * Motor driver
-   * Alarm system
+Monitor fire, gas, and motion sensors in real time.
+
+---
+
+### 📝 Event Logging System
+
+![Event Logging](screenshots/07_event_logging_system.png)
+
+Track security events and system alerts with timestamps.
+
+---
 
 ## Technology Stack
 
-* Python
-* Flask
-* OpenCV
-* SQLite
-* HTML/CSS/JavaScript
-* Raspberry Pi
-* L298N Motor Driver
-* IoT Sensors
+- Python
+- Flask
+- OpenCV
+- SQLite
+- Raspberry Pi
+- HTML/CSS/JavaScript
+- L298N Motor Driver
+- PIR Motion Sensor
+- MQ Gas Sensor
+- Flame Sensor
+
+---
 
 ## Installation
 
@@ -102,7 +92,6 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 python3 main.py
-```
 
 ## Access
 
