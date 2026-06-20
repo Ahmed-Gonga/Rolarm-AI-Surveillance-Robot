@@ -1,0 +1,6 @@
+flask==3.0.3
+opencv-contrib-python==4.10.0.84
+numpy==1.26.4
+requests==2.32.3
+picamera2; platform_machine=='aarch64'
+RPi.GPIO; platform_machine=='aarch64'
